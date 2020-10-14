@@ -5,6 +5,10 @@
  */
 package proyecto_arc;
 
+import proyecto_arc.controlador.Controlador;
+import proyecto_arc.modelo.Modelo;
+import proyecto_arc.vista.Vista;
+
 /**
  *
  * @author megag
@@ -15,12 +19,8 @@ public class Proyecto_ARC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        //Hola alberto fffsss
-        //000dsdsdsdsd
-        // Hola gente!!!!!!!!
-        
+        Modelo model = new Modelo();
+        Vista vista = new Vista(model);
+        Controlador controlador = new Controlador(model, vista);
     }
-    
 }
